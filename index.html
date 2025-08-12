@@ -220,7 +220,7 @@
             for (let i = 1; i <= totalPhotos; i++) {
                 const photoItem = document.createElement('div');
                 photoItem.className = 'photo-item';
-                photoItem.innerHTML = `<img src="public/${i}.jpg" alt="Photo ${i}" onerror="this.parentElement.style.display='none'">`;
+                photoItem.innerHTML = `<img src="/${i}.jpg" alt="Photo ${i}" onerror="this.parentElement.style.display='none'">`;
                 photoItem.addEventListener('click', () => openLightbox(i - 1));
                 gallery.appendChild(photoItem);
             }
