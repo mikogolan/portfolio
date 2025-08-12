@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Portfolio</title>
+    <title>🔥 MIKO'S EXTREME PHOTOGRAPHY PORTAL 🔥 - GeoCities</title>
     <style>
         * {
             margin: 0;
@@ -11,57 +11,514 @@
             box-sizing: border-box;
         }
 
+        /* INSANE RANDOM CURSOR MADNESS! */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fafafa;
-            color: #333;
+            cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">✨</text></svg>'), auto;
+            font-family: 'Comic Sans MS', cursive, 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff, #ff0000, #00ff00, #0000ff);
+            background-size: 800% 800%;
+            animation: insaneGradientShift 0.5s ease infinite, backgroundPulse 2s ease infinite;
+            color: #000;
             line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* RANDOM BACKGROUND EFFECTS */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                rgba(255, 0, 255, 0.3) 0%, 
+                transparent 50%);
+            pointer-events: none;
+            z-index: 1;
+            animation: pulseGlow 1s ease-in-out infinite alternate;
+        }
+
+        body::after {
+            content: "🎮🔥⚡💎🌟✨💫🎉🎊🚀🎯🎲🎪🎨🎭🎪🎨🎭";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            animation: floatingEmojis 20s linear infinite;
+            pointer-events: none;
+            z-index: 2;
+            opacity: 0.3;
+        }
+
+        @keyframes insaneGradientShift {
+            0% { background-position: 0% 0%; }
+            25% { background-position: 100% 100%; }
+            50% { background-position: 50% 0%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 100% 0%; }
+        }
+
+        @keyframes backgroundPulse {
+            0% { filter: brightness(1) contrast(1) saturate(1); }
+            50% { filter: brightness(1.5) contrast(2) saturate(3); }
+            100% { filter: brightness(1) contrast(1) saturate(1); }
+        }
+
+        @keyframes pulseGlow {
+            0% { opacity: 0.1; }
+            100% { opacity: 0.8; }
+        }
+
+        @keyframes floatingEmojis {
+            0% { transform: translateY(100vh) translateX(-100px); }
+            100% { transform: translateY(-100px) translateX(100vw); }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes epilepsyBlink {
+            0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% { opacity: 1; }
+            5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% { opacity: 0; }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        @keyframes ultraShake {
+            0% { transform: translateX(0) rotate(0deg) scale(1); }
+            10% { transform: translateX(-10px) rotate(-5deg) scale(1.1); }
+            20% { transform: translateX(10px) rotate(5deg) scale(0.9); }
+            30% { transform: translateX(-8px) rotate(-3deg) scale(1.2); }
+            40% { transform: translateX(8px) rotate(3deg) scale(0.8); }
+            50% { transform: translateX(-6px) rotate(-1deg) scale(1.3); }
+            60% { transform: translateX(6px) rotate(1deg) scale(0.7); }
+            70% { transform: translateX(-4px) rotate(-2deg) scale(1.1); }
+            80% { transform: translateX(4px) rotate(2deg) scale(0.9); }
+            90% { transform: translateX(-2px) rotate(-1deg) scale(1.05); }
+            100% { transform: translateX(0) rotate(0deg) scale(1); }
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px) rotate(-1deg); }
+            50% { transform: translateX(5px) rotate(1deg); }
+            75% { transform: translateX(-3px) rotate(-0.5deg); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes megaBounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) scale(1); }
+            10% { transform: translateY(-100px) scale(1.5) rotate(10deg); }
+            30% { transform: translateY(-200px) scale(0.5) rotate(-10deg); }
+            40% { transform: translateY(-50px) scale(2) rotate(20deg); }
+            60% { transform: translateY(-150px) scale(0.8) rotate(-20deg); }
+            70% { transform: translateY(-25px) scale(1.2) rotate(5deg); }
+            90% { transform: translateY(-10px) scale(1.1) rotate(-5deg); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+
+        @keyframes insaneRotate {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(90deg) scale(1.5); }
+            50% { transform: rotate(180deg) scale(0.5); }
+            75% { transform: rotate(270deg) scale(2); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes hyperRainbow {
+            0% { color: #ff0000; text-shadow: 0 0 10px #ff0000; }
+            8.33% { color: #ff4000; text-shadow: 0 0 10px #ff4000; }
+            16.66% { color: #ff8000; text-shadow: 0 0 10px #ff8000; }
+            25% { color: #ffff00; text-shadow: 0 0 10px #ffff00; }
+            33.33% { color: #80ff00; text-shadow: 0 0 10px #80ff00; }
+            41.66% { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+            50% { color: #00ff80; text-shadow: 0 0 10px #00ff80; }
+            58.33% { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+            66.66% { color: #0080ff; text-shadow: 0 0 10px #0080ff; }
+            75% { color: #0000ff; text-shadow: 0 0 10px #0000ff; }
+            83.33% { color: #8000ff; text-shadow: 0 0 10px #8000ff; }
+            91.66% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+            100% { color: #ff0000; text-shadow: 0 0 10px #ff0000; }
+        }
+
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            16.66% { color: #ff8000; }
+            33.33% { color: #ffff00; }
+            50% { color: #00ff00; }
+            66.66% { color: #0080ff; }
+            83.33% { color: #8000ff; }
+            100% { color: #ff0000; }
+        }
+
+        @keyframes pixelGlitch {
+            0% { 
+                filter: hue-rotate(0deg) saturate(1) contrast(1);
+                transform: translateX(0);
+            }
+            10% { 
+                filter: hue-rotate(90deg) saturate(5) contrast(3);
+                transform: translateX(-2px);
+            }
+            20% { 
+                filter: hue-rotate(180deg) saturate(2) contrast(5);
+                transform: translateX(2px);
+            }
+            30% { 
+                filter: hue-rotate(270deg) saturate(10) contrast(1);
+                transform: translateX(-1px);
+            }
+            40% { 
+                filter: hue-rotate(360deg) saturate(1) contrast(2);
+                transform: translateX(1px);
+            }
+            50% { 
+                filter: hue-rotate(45deg) saturate(8) contrast(4);
+                transform: translateX(0);
+            }
+            60% { 
+                filter: hue-rotate(135deg) saturate(3) contrast(6);
+                transform: translateX(-3px);
+            }
+            70% { 
+                filter: hue-rotate(225deg) saturate(6) contrast(2);
+                transform: translateX(3px);
+            }
+            80% { 
+                filter: hue-rotate(315deg) saturate(4) contrast(3);
+                transform: translateX(-1px);
+            }
+            90% { 
+                filter: hue-rotate(60deg) saturate(7) contrast(5);
+                transform: translateX(1px);
+            }
+            100% { 
+                filter: hue-rotate(0deg) saturate(1) contrast(1);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes minecraftBlocky {
+            0% { 
+                filter: pixelate(1px) contrast(1);
+                transform: scale(1);
+            }
+            25% { 
+                filter: pixelate(4px) contrast(2);
+                transform: scale(1.2);
+            }
+            50% { 
+                filter: pixelate(8px) contrast(3);
+                transform: scale(0.8);
+            }
+            75% { 
+                filter: pixelate(4px) contrast(2);
+                transform: scale(1.1);
+            }
+            100% { 
+                filter: pixelate(1px) contrast(1);
+                transform: scale(1);
+            }
+        }
+
+        .dancing-text {
+            animation: ultraShake 0.2s infinite, hyperRainbow 0.5s infinite;
+        }
+
+        /* RANDOM CURSOR CHAOS */
+        .cursor-sword { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">⚔️</text></svg>'), auto !important; }
+        .cursor-fire { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">🔥</text></svg>'), auto !important; }
+        .cursor-diamond { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">💎</text></svg>'), auto !important; }
+        .cursor-rocket { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">🚀</text></svg>'), auto !important; }
+        .cursor-lightning { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">⚡</text></svg>'), auto !important; }
+        .cursor-minecraft { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">🟫</text></svg>'), auto !important; }
+        .cursor-bomb { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">💣</text></svg>'), auto !important; }
+        .cursor-crown { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">👑</text></svg>'), auto !important; }
+        .cursor-alien { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">👽</text></svg>'), auto !important; }
+        .cursor-skull { cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">💀</text></svg>'), auto !important; }
+
+        /* MINECRAFT BLOCKY ELEMENTS */
+        .minecraft-block {
+            background: linear-gradient(45deg, #8B4513, #A0522D, #CD853F);
+            border: 4px solid #654321;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            animation: minecraftBlocky 2s infinite;
+            position: relative;
+        }
+
+        .minecraft-block::before {
+            content: "▓▓▓";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #2F4F2F;
+            font-family: monospace;
+            font-size: 20px;
+            text-shadow: 1px 1px 0px #000;
+        }
+
+        /* GLITCH EFFECTS */
+        .glitch-zone {
+            animation: pixelGlitch 0.1s infinite;
+            position: relative;
+        }
+
+        .glitch-zone::before,
+        .glitch-zone::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch-zone::before {
+            animation: pixelGlitch 0.15s infinite;
+            color: #ff00ff;
+            z-index: -1;
+            transform: translateX(-2px);
+        }
+
+        .glitch-zone::after {
+            animation: pixelGlitch 0.1s infinite reverse;
+            color: #00ffff;
+            z-index: -2;
+            transform: translateX(2px);
+        }
+
+        /* RANDOM FLOATING ELEMENTS */
+        .floating-chaos {
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+            font-size: 30px;
+            animation: floatingChaos 10s infinite linear;
+        }
+
+        @keyframes floatingChaos {
+            0% { 
+                transform: translateY(100vh) translateX(-50px) rotate(0deg) scale(0.5);
+                opacity: 0;
+            }
+            10% { 
+                opacity: 1;
+                transform: translateY(80vh) translateX(20px) rotate(36deg) scale(1);
+            }
+            50% { 
+                transform: translateY(50vh) translateX(-30px) rotate(180deg) scale(1.5);
+            }
+            90% { 
+                opacity: 1;
+                transform: translateY(10vh) translateX(40px) rotate(324deg) scale(0.8);
+            }
+            100% { 
+                transform: translateY(-10vh) translateX(-20px) rotate(360deg) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* SEIZURE WARNING EFFECTS */
+        .epilepsy-mode {
+            animation: epilepsyBlink 0.1s infinite, hyperRainbow 0.05s infinite;
+        }
+
+        /* SOUND EFFECT INDICATORS */
+        .sound-effect {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            z-index: 99999;
+            pointer-events: none;
+            animation: soundPop 1s ease-out forwards;
+        }
+
+        @keyframes soundPop {
+            0% { 
+                transform: translate(-50%, -50%) scale(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% { 
+                transform: translate(-50%, -50%) scale(2) rotate(180deg);
+                opacity: 1;
+            }
+            100% { 
+                transform: translate(-50%, -50%) scale(0) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .marquee {
+            background: #000;
+            color: #00ff00;
+            padding: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            border: 3px solid #ff00ff;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
         }
 
         header {
             text-align: center;
             padding: 60px 20px 40px;
-            background-color: #fff;
-            border-bottom: 1px solid #eee;
+            background: radial-gradient(circle, #ff00ff, #00ffff, #ffff00);
+            border: 10px solid #ff0000;
+            border-style: ridge;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "🌟⭐✨💫🌟⭐✨💫🌟⭐✨💫🌟⭐✨💫";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #000;
+            color: #ffff00;
+            animation: blink 1s infinite;
+            padding: 5px;
+            font-size: 20px;
         }
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            letter-spacing: 2px;
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: 5px;
             text-transform: uppercase;
-            color: #222;
+            font-family: 'Impact', sans-serif;
+            text-shadow: 5px 5px 0px #000, 10px 10px 0px #ff00ff, 15px 15px 0px #00ffff, 20px 20px 0px #ffff00;
+            animation: megaBounce 3s infinite, hyperRainbow 0.3s infinite, insaneRotate 10s infinite;
+            margin-top: 40px;
+            transform: rotate(-5deg);
+            position: relative;
+            z-index: 1000;
+        }
+
+        h1:hover {
+            animation: ultraShake 0.1s infinite, epilepsyBlink 0.05s infinite, insaneRotate 0.5s infinite;
+            font-size: 6rem;
+            cursor: none;
         }
 
         .subtitle {
-            font-size: 1rem;
-            color: #666;
-            margin-top: 10px;
-            font-weight: 300;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shake 2s infinite;
+            text-shadow: 2px 2px 0px #000;
+        }
+
+        .visitor-counter {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #000;
+            color: #00ff00;
+            padding: 10px;
+            border: 3px solid #ff00ff;
+            font-family: 'Courier New', monospace;
+            z-index: 999;
+            animation: blink 2s infinite;
+        }
+
+        .under-construction {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: #ffff00;
+            color: #ff0000;
+            padding: 10px;
+            border: 3px solid #000;
+            font-weight: bold;
+            animation: shake 1s infinite;
+            z-index: 999;
         }
 
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            gap: 30px;
             padding: 40px 20px;
             max-width: 1400px;
             margin: 0 auto;
+            background: repeating-linear-gradient(
+                45deg,
+                #ff00ff,
+                #ff00ff 10px,
+                #00ffff 10px,
+                #00ffff 20px
+            );
+            border: 15px ridge #ff0000;
         }
 
         .photo-item {
             position: relative;
             overflow: hidden;
-            background-color: #fff;
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
+            background: linear-gradient(45deg, #ff00ff, #ffff00, #00ffff, #ff0000);
+            background-size: 400% 400%;
+            border: 8px ridge #00ff00;
+            box-shadow: 0 0 20px #ff00ff, inset 0 0 20px #00ffff, 0 0 40px #ffff00;
+            transition: all 0.1s ease;
+            cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">👁️</text></svg>'), pointer;
+            transform: rotate(2deg);
+            animation: insaneGradientShift 2s infinite, pixelGlitch 5s infinite;
+        }
+
+        .photo-item:nth-child(even) {
+            transform: rotate(-2deg);
+            animation: insaneGradientShift 1.5s infinite reverse, minecraftBlocky 3s infinite;
+        }
+
+        .photo-item:nth-child(3n) {
+            animation: ultraShake 0.3s infinite, hyperRainbow 1s infinite, insaneRotate 8s infinite;
         }
 
         .photo-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: scale(1.5) rotate(15deg);
+            box-shadow: 0 0 100px #ff00ff, inset 0 0 100px #00ffff, 0 0 200px #ffff00;
+            animation: ultraShake 0.05s infinite, epilepsyBlink 0.1s infinite, insaneRotate 0.2s infinite;
+            border-color: #ffff00;
+            z-index: 9999;
         }
 
         .photo-item img {
@@ -69,11 +526,28 @@
             height: 250px;
             object-fit: cover;
             display: block;
-            transition: transform 0.3s ease;
+            filter: saturate(200%) contrast(150%) hue-rotate(90deg);
+            transition: all 0.3s ease;
+            border: 5px solid #ff00ff;
         }
 
         .photo-item:hover img {
-            transform: scale(1.05);
+            filter: saturate(300%) contrast(200%) hue-rotate(180deg) blur(1px);
+            animation: rotate 1s infinite;
+        }
+
+        .photo-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #000;
+            color: #00ff00;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            text-align: center;
+            animation: blink 3s infinite;
         }
 
         .lightbox {
@@ -83,7 +557,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background: radial-gradient(circle, #ff00ff, #000000);
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -91,44 +565,49 @@
 
         .lightbox.active {
             display: flex;
+            animation: shake 0.1s infinite;
         }
 
         .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 80%;
+            max-height: 80%;
             object-fit: contain;
-            border-radius: 4px;
+            border: 10px ridge #ff00ff;
+            box-shadow: 0 0 50px #00ffff;
+            filter: saturate(200%) contrast(150%);
         }
 
         .lightbox .close {
             position: absolute;
             top: 30px;
             right: 40px;
-            font-size: 40px;
-            color: #fff;
+            font-size: 60px;
+            color: #ff0000;
             cursor: pointer;
-            font-weight: 300;
-            transition: opacity 0.3s ease;
+            font-weight: bold;
+            animation: rainbow 1s infinite, bounce 2s infinite;
+            text-shadow: 3px 3px 0px #000;
         }
 
         .lightbox .close:hover {
-            opacity: 0.7;
+            animation: shake 0.1s infinite, rainbow 0.5s infinite;
         }
 
         .nav-arrow {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 30px;
-            color: #fff;
+            font-size: 50px;
             cursor: pointer;
             padding: 20px;
             user-select: none;
-            transition: opacity 0.3s ease;
+            font-weight: bold;
+            text-shadow: 3px 3px 0px #000;
+            animation: rainbow 2s infinite;
         }
 
         .nav-arrow:hover {
-            opacity: 0.7;
+            animation: shake 0.2s infinite, rainbow 0.5s infinite;
         }
 
         .nav-arrow.prev {
@@ -142,26 +621,66 @@
         footer {
             text-align: center;
             padding: 40px 20px;
-            background-color: #fff;
-            border-top: 1px solid #eee;
+            background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+            border-top: 10px ridge #ff00ff;
             margin-top: 60px;
+            animation: gradientShift 2s ease infinite;
         }
 
         footer p {
-            color: #666;
-            font-size: 0.9rem;
-            font-weight: 300;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 0px #000;
+            animation: rainbow 3s infinite;
+        }
+
+        .webring {
+            margin-top: 20px;
+            background: #000;
+            color: #00ff00;
+            padding: 15px;
+            border: 3px ridge #ff00ff;
+            font-family: 'Courier New', monospace;
+        }
+
+        .hit-counter {
+            display: inline-block;
+            background: #000;
+            color: #ff0000;
+            padding: 5px 10px;
+            border: 2px solid #ffff00;
+            font-family: 'Courier New', monospace;
+            animation: blink 1s infinite;
+            margin: 0 10px;
+        }
+
+        .spinning-logo {
+            position: fixed;
+            top: 50%;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #ff00ff, #00ffff);
+            border-radius: 50%;
+            animation: rotate 2s linear infinite;
+            z-index: 998;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: 5px ridge #ff0000;
         }
 
         @media (max-width: 768px) {
             .gallery {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 15px;
+                gap: 20px;
                 padding: 30px 15px;
             }
 
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .photo-item img {
@@ -169,7 +688,7 @@
             }
 
             .nav-arrow {
-                font-size: 24px;
+                font-size: 35px;
                 padding: 15px;
             }
 
@@ -184,16 +703,53 @@
             .lightbox .close {
                 top: 20px;
                 right: 20px;
-                font-size: 30px;
+                font-size: 40px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- VISITOR COUNTER AND CHAOS -->
+    <div class="visitor-counter">
+        👁️ VISITORS: <span id="visitorCount">133769</span> 👁️
+    </div>
+    
+    <div class="under-construction">
+        🚧 UNDER CONSTRUCTION 🚧
+    </div>
+    
+    <div class="spinning-logo">
+        🌀
+    </div>
+
+    <!-- SCROLLING MARQUEE MADNESS -->
+    <div class="marquee">
+        <div class="marquee-content">
+            🔥 WELCOME TO THE MOST EXTREME PHOTOGRAPHY EXPERIENCE ON THE WORLD WIDE WEB!!! 🔥 
+            BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 OR INTERNET EXPLORER 6.0!!! 
+            🌟 WEBMASTER: MIKO 🌟 EMAIL: MIKO@GEOCITIES.COM 🌟
+            LAST UPDATED: YESTERDAY 🌟 GUESTBOOK COMING SOON!!! 🌟
+        </div>
+    </div>
+
     <header>
-        <h1>MIKO</h1>
-        <p class="subtitle">A Visual Journey</p>
+        <h1 class="dancing-text">MIKO</h1>
+        <p class="subtitle">🌈 A VISUAL JOURNEY THROUGH CYBERSPACE 🌈</p>
+        <div style="margin-top: 20px;">
+            <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wjRLYFaOvJjtYmGfOy4VoGKzGt27mUXAmDHAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIutjyb1p+XSVGtLrCfGI8CQZOgNEugICUoBAEdNj5nDQjJmIuO5gOWUYCxiPJcn10TAAAOw==" alt="Loading..." style="width: 16px; height: 16px; margin: 0 5px;">
+            <span style="color: #ff0000; font-weight: bold; animation: blink 1s infinite;">LOADING AWESOME CONTENT...</span>
+            <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wjRLYFaOvJjtYmGfOy4VoGKzGt27mUXAmDHAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIutjyb1p+XSVGtLrCfGI8CQZOgNEugICUoBAEdNj5nDQjJmIuO5gOWUYCxiPJcn10TAAAOw==" alt="Loading..." style="width: 16px; height: 16px; margin: 0 5px;">
+        </div>
     </header>
+
+    <!-- ANOTHER MARQUEE FOR MAXIMUM CHAOS -->
+    <div class="marquee" style="background: #ff0000; color: #ffff00;">
+        <div class="marquee-content">
+            ⚡ NEW! EXCLUSIVE PHOTOS! NEVER BEFORE SEEN! ⚡ 
+            DOWNLOAD TIMES: 56K MODEM = 5 MINUTES | DSL = 30 SECONDS | T1 = INSTANT! ⚡
+            JAVASCRIPT ENABLED SITE! REQUIRES FLASH PLAYER 5.0! ⚡
+        </div>
+    </div>
 
     <main class="gallery" id="gallery">
         <!-- Photos will be generated here -->
@@ -207,12 +763,190 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Photography Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 MIKO'S EXTREME PHOTOGRAPHY PORTAL. ALL RIGHTS RESERVED.</p>
+        <div class="hit-counter">HITS: 999999</div>
+        <div class="hit-counter">ONLINE NOW: 42</div>
+        <div class="hit-counter">GUESTBOOK ENTRIES: 1337</div>
+        
+        <div class="webring">
+            🌐 WEBRING NAVIGATION 🌐<br>
+            <a href="#" style="color: #00ff00;">← PREV</a> | 
+            <a href="#" style="color: #00ff00;">RANDOM</a> | 
+            <a href="#" style="color: #00ff00;">NEXT →</a><br>
+            MEMBER OF: PHOTOGRAPHY WEBRING | GEOCITIES NEIGHBORHOOD | ANGELFIRE COLLECTIVE
+        </div>
+        
+        <p style="margin-top: 20px; font-size: 0.8rem; animation: rainbow 2s infinite;">
+            🏆 SITE AWARDS: BEST PHOTOGRAPHY SITE 2003 | COOL SITE OF THE DAY | YAHOO PICK 🏆<br>
+            📧 CONTACT: MIKO@HOTMAIL.COM | ICQ: 12345678 | AIM: MIKOPHOTOS 📧<br>
+            🔗 POWERED BY: GEOCITIES | BEST VIEWED IN 1024x768 | MADE WITH NOTEPAD 🔗
+        </p>
     </footer>
 
     <script>
         let currentPhotoIndex = 0;
         const totalPhotos = 39;
+        let visitorCount = 133769;
+        let chaosLevel = 1;
+        let isEpilepsyMode = false;
+        let currentCursor = 0;
+        let audioPlayCount = 0;
+
+        // INSANE CURSOR ARRAY
+        const cursors = [
+            'cursor-sword', 'cursor-fire', 'cursor-diamond', 'cursor-rocket', 
+            'cursor-lightning', 'cursor-minecraft', 'cursor-bomb', 'cursor-crown',
+            'cursor-alien', 'cursor-skull'
+        ];
+
+        // EXTREME 2003 SOUND EFFECTS WITH ACTUAL SOUND INTEGRATION!
+        function playSound(type) {
+            console.log(`🔊 Playing ${type} sound effect! 🔊`);
+            
+            // Show visual sound effect
+            showSoundEffect(type);
+            
+            // Try to play the actual sound file when it exists (max twice)
+            if (audioPlayCount < 2) {
+                try {
+                    const audio = new Audio('public/sound.mp3');
+                    // audio.volume = Math.random() * 0.5 + 0.1; // Random volume between 0.1 and 0.6
+                    // audio.playbackRate = Math.random() * 2 + 0.5; // Random speed between 0.5x and 2.5x
+                    audio.play().then(() => {
+                        audioPlayCount++;
+                        console.log(`Audio played ${audioPlayCount}/2 times`);
+                    }).catch(e => console.log('Sound file not found yet, but will work when you add it!'));
+                } catch (e) {
+                    console.log('Sound.mp3 coming soon! 🎵');
+                }
+            } else {
+                console.log('Audio play limit reached (2/2)');
+            }
+            
+            // Random chaos effects when sound plays
+            if (Math.random() < 0.3) {
+                triggerRandomChaos();
+            }
+        }
+
+        function showSoundEffect(type) {
+            const effects = {
+                'click': '💥',
+                'hover': '✨',
+                'open': '🚀',
+                'close': '🔥',
+                'next': '⚡',
+                'prev': '💫',
+                'random': ['🎊', '🎉', '🎯', '🎲', '🎪'][Math.floor(Math.random() * 5)]
+            };
+            
+            const effect = document.createElement('div');
+            effect.className = 'sound-effect';
+            effect.textContent = effects[type] || effects.random;
+            document.body.appendChild(effect);
+            
+            setTimeout(() => effect.remove(), 1000);
+        }
+
+        // RANDOM CURSOR CHAOS
+        function changeCursorRandomly() {
+            currentCursor = (currentCursor + 1) % cursors.length;
+            document.body.className = document.body.className.replace(/cursor-\w+/g, '') + ' ' + cursors[currentCursor];
+        }
+
+        // TRIGGER ABSOLUTE CHAOS
+        function triggerRandomChaos() {
+            const chaosEvents = [
+                () => {
+                    // Spawn floating chaos elements
+                    for (let i = 0; i < 5; i++) {
+                        createFloatingChaos();
+                    }
+                },
+                () => {
+                    // Change all photo items to minecraft blocks temporarily
+                    document.querySelectorAll('.photo-item').forEach(item => {
+                        item.classList.add('minecraft-block');
+                        setTimeout(() => item.classList.remove('minecraft-block'), 3000);
+                    });
+                },
+                () => {
+                    // Make everything glitch for a moment
+                    document.body.style.filter = 'hue-rotate(' + Math.random() * 360 + 'deg) saturate(10) contrast(5)';
+                    setTimeout(() => document.body.style.filter = '', 1000);
+                },
+                () => {
+                    // Epilepsy mode toggle
+                    isEpilepsyMode = !isEpilepsyMode;
+                    document.body.classList.toggle('epilepsy-mode', isEpilepsyMode);
+                    setTimeout(() => {
+                        isEpilepsyMode = false;
+                        document.body.classList.remove('epilepsy-mode');
+                    }, 2000);
+                },
+                () => {
+                    // Random cursor change
+                    changeCursorRandomly();
+                },
+                () => {
+                    // Screen shake
+                    document.body.style.animation = 'ultraShake 0.5s infinite';
+                    setTimeout(() => document.body.style.animation = 'insaneGradientShift 0.5s ease infinite, backgroundPulse 2s ease infinite', 1000);
+                },
+                () => {
+                    // Random zoom on random photo
+                    const photos = document.querySelectorAll('.photo-item');
+                    const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+                    if (randomPhoto) {
+                        randomPhoto.style.transform = 'scale(3) rotate(720deg)';
+                        randomPhoto.style.zIndex = '99999';
+                        setTimeout(() => {
+                            randomPhoto.style.transform = '';
+                            randomPhoto.style.zIndex = '';
+                        }, 2000);
+                    }
+                },
+                () => {
+                    // Make title go absolutely insane
+                    const title = document.querySelector('h1');
+                    title.style.animation = 'ultraShake 0.05s infinite, epilepsyBlink 0.05s infinite, insaneRotate 0.1s infinite';
+                    setTimeout(() => {
+                        title.style.animation = 'megaBounce 3s infinite, hyperRainbow 0.3s infinite, insaneRotate 10s infinite';
+                    }, 3000);
+                }
+            ];
+
+            // Execute random chaos event
+            const randomEvent = chaosEvents[Math.floor(Math.random() * chaosEvents.length)];
+            randomEvent();
+            
+            playSound('random');
+        }
+
+        function createFloatingChaos() {
+            const chaosElements = ['🎮', '🔥', '⚡', '💎', '🌟', '✨', '💫', '🎉', '🎊', '🚀', '💣', '👽', '🤖', '🦄', '🍕', '🎸'];
+            const element = document.createElement('div');
+            element.className = 'floating-chaos';
+            element.textContent = chaosElements[Math.floor(Math.random() * chaosElements.length)];
+            element.style.left = Math.random() * 100 + 'vw';
+            element.style.animationDuration = (Math.random() * 5 + 3) + 's';
+            document.body.appendChild(element);
+            
+            setTimeout(() => element.remove(), 10000);
+        }
+
+        // VISITOR COUNTER MADNESS
+        function updateVisitorCounter() {
+            visitorCount += Math.floor(Math.random() * 5) + 1;
+            document.getElementById('visitorCount').textContent = visitorCount;
+            
+            // Random chaos on visitor count milestones
+            if (visitorCount % 100 === 0) {
+                triggerRandomChaos();
+            }
+        }
+
+
 
         function generateGallery() {
             const gallery = document.getElementById('gallery');
@@ -220,8 +954,29 @@
             for (let i = 1; i <= totalPhotos; i++) {
                 const photoItem = document.createElement('div');
                 photoItem.className = 'photo-item';
-                photoItem.innerHTML = `<img src="public/${i}.jpg" alt="Photo ${i}" onerror="this.parentElement.style.display='none'">`;
-                photoItem.addEventListener('click', () => openLightbox(i - 1));
+                
+                // Add random photo labels with 2003 energy
+                const randomLabels = [
+                    "COOL PIC!", "AWESOME!", "CHECK IT OUT!", "BEST SHOT!", 
+                    "AMAZING!", "WOW!", "MUST SEE!", "EXCLUSIVE!", "NEW!", "HOT!"
+                ];
+                const label = randomLabels[Math.floor(Math.random() * randomLabels.length)];
+                
+                photoItem.innerHTML = `
+                    <img src="public/${i}.jpg" alt="Photo ${i}" onerror="this.parentElement.style.display='none'">
+                    <div class="photo-label">${label} #${i}</div>
+                `;
+                
+                photoItem.addEventListener('click', () => {
+                    playSound('click');
+                    openLightbox(i - 1);
+                });
+                
+                // Add random hover sounds
+                photoItem.addEventListener('mouseenter', () => {
+                    if (Math.random() < 0.3) playSound('hover');
+                });
+                
                 gallery.appendChild(photoItem);
             }
         }
@@ -234,35 +989,36 @@
             lightboxImg.src = `public/${index + 1}.jpg`;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
+            
+            playSound('open');
+
         }
 
         function closeLightbox() {
             const lightbox = document.getElementById('lightbox');
             lightbox.classList.remove('active');
             document.body.style.overflow = 'auto';
+            playSound('close');
         }
 
         function showNextPhoto() {
             currentPhotoIndex = (currentPhotoIndex + 1) % totalPhotos;
             const lightboxImg = document.getElementById('lightboxImg');
             lightboxImg.src = `public/${currentPhotoIndex + 1}.jpg`;
+            playSound('next');
+            updateVisitorCounter();
         }
 
         function showPrevPhoto() {
             currentPhotoIndex = (currentPhotoIndex - 1 + totalPhotos) % totalPhotos;
             const lightboxImg = document.getElementById('lightboxImg');
             lightboxImg.src = `public/${currentPhotoIndex + 1}.jpg`;
+            playSound('prev');
         }
 
-        document.getElementById('closeBtn').addEventListener('click', closeLightbox);
-        document.getElementById('nextBtn').addEventListener('click', showNextPhoto);
-        document.getElementById('prevBtn').addEventListener('click', showPrevPhoto);
-
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
+        // KONAMI CODE EASTER EGG!
+        let konamiCode = [];
+        const konamiSequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; // ↑↑↓↓←→←→BA
 
         document.addEventListener('keydown', function(e) {
             if (document.getElementById('lightbox').classList.contains('active')) {
@@ -274,9 +1030,186 @@
                     showPrevPhoto();
                 }
             }
+            
+            // Konami code detection
+            konamiCode.push(e.keyCode);
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+            
+            if (konamiCode.length === konamiSequence.length && 
+                konamiCode.every((code, index) => code === konamiSequence[index])) {
+                activateSecretMode();
+            }
         });
 
+        function activateSecretMode() {
+            console.log("🎊 KONAMI CODE ACTIVATED! EXTREME MODE ENGAGED! 🎊");
+            document.body.style.animation = "shake 0.1s infinite, rainbow 0.5s infinite";
+            
+            // Make everything even more chaotic
+            const style = document.createElement('style');
+            style.innerHTML = `
+                * { 
+                    animation: rotate 0.5s infinite, rainbow 0.2s infinite !important;
+                }
+                .photo-item:hover {
+                    transform: scale(2) rotate(720deg) !important;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            setTimeout(() => {
+                location.reload(); // Reset after 10 seconds
+            }, 10000);
+        }
+
+        // Event listeners
+        document.getElementById('closeBtn').addEventListener('click', closeLightbox);
+        document.getElementById('nextBtn').addEventListener('click', showNextPhoto);
+        document.getElementById('prevBtn').addEventListener('click', showPrevPhoto);
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // INSANE MOUSE TRAIL EFFECTS!
+        let mouseTrailCount = 0;
+        document.addEventListener('mousemove', function(e) {
+            mouseTrailCount++;
+            
+            // Update CSS variable for background glow effect
+            document.documentElement.style.setProperty('--mouse-x', (e.clientX / window.innerWidth * 100) + '%');
+            document.documentElement.style.setProperty('--mouse-y', (e.clientY / window.innerHeight * 100) + '%');
+            
+            // More frequent sparkles with variety
+            if (Math.random() < 0.3) {
+                const sparkle = document.createElement('div');
+                const sparkleTypes = ['✨', '⭐', '🌟', '💫', '🔥', '⚡', '💎', '🎮', '💣', '👽'];
+                sparkle.innerHTML = sparkleTypes[Math.floor(Math.random() * sparkleTypes.length)];
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = (e.clientX + Math.random() * 40 - 20) + 'px';
+                sparkle.style.top = (e.clientY + Math.random() * 40 - 20) + 'px';
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.animation = 'fadeOut ' + (Math.random() * 2 + 0.5) + 's forwards';
+                sparkle.style.zIndex = '9999';
+                sparkle.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                sparkle.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => sparkle.remove(), 2500);
+            }
+            
+            // Random cursor changes based on mouse movement
+            if (mouseTrailCount % 50 === 0) {
+                changeCursorRandomly();
+            }
+            
+            // Trigger chaos on fast mouse movement
+            if (Math.random() < 0.001) {
+                triggerRandomChaos();
+            }
+            
+            // Random sound effects on mouse movement
+            if (Math.random() < 0.005) {
+                playSound('hover');
+            }
+        });
+
+        // Add fadeOut animation
+        const sparkleStyle = document.createElement('style');
+        sparkleStyle.innerHTML = `
+            @keyframes fadeOut {
+                0% { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(-50px); }
+            }
+        `;
+        document.head.appendChild(sparkleStyle);
+
+        // AUTO-UPDATE VISITOR COUNTER WITH CHAOS
+        setInterval(updateVisitorCounter, 3000);
+        
+        // RANDOM CURSOR CHANGES
+        setInterval(changeCursorRandomly, 5000);
+        
+        // RANDOM CHAOS TIMER
+        setInterval(() => {
+            if (Math.random() < 0.3) {
+                triggerRandomChaos();
+            }
+        }, 10000);
+        
+        // FLOATING CHAOS SPAWNER
+        setInterval(createFloatingChaos, 3000);
+        
+        // RANDOM PAGE EFFECTS
+        setInterval(() => {
+            const effects = [
+                () => document.body.style.transform = 'rotate(' + (Math.random() * 4 - 2) + 'deg)',
+                () => document.body.style.filter = 'hue-rotate(' + Math.random() * 360 + 'deg)',
+                () => {
+                    document.querySelectorAll('.photo-item').forEach(item => {
+                        item.style.animation = 'ultraShake 0.5s infinite';
+                        setTimeout(() => item.style.animation = '', 1000);
+                    });
+                },
+                () => {
+                    const colors = ['#ff00ff', '#00ffff', '#ffff00', '#ff0000', '#00ff00', '#0000ff'];
+                    document.documentElement.style.setProperty('--random-color', colors[Math.floor(Math.random() * colors.length)]);
+                }
+            ];
+            
+            if (Math.random() < 0.2) {
+                effects[Math.floor(Math.random() * effects.length)]();
+                setTimeout(() => {
+                    document.body.style.transform = '';
+                    document.body.style.filter = '';
+                }, 2000);
+            }
+        }, 7000);
+
+
+
+        // RANDOM BACKGROUND MUSIC NOTIFICATION
+        setTimeout(() => {
+            console.log("🎵 Background music would go here! 🎵");
+            // Trigger mega chaos as reward
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => triggerRandomChaos(), i * 1000);
+            }
+        }, 5000);
+
+        // MINECRAFT REFERENCE EASTER EGG
+        let clickCount = 0;
+        document.addEventListener('click', function(e) {
+            clickCount++;
+            if (clickCount % 64 === 0) { // 64 = stack size in Minecraft!
+                console.log("🎮 MINECRAFT STACK COMPLETED! 64 CLICKS! 🎮");
+                document.querySelectorAll('.photo-item').forEach(item => {
+                    item.classList.add('minecraft-block');
+                    setTimeout(() => item.classList.remove('minecraft-block'), 5000);
+                });
+                playSound('random');
+            }
+        });
+
+        // Initialize everything
         generateGallery();
+        updateVisitorCounter();
+        changeCursorRandomly();
+        
+        // Spawn initial floating chaos
+        for (let i = 0; i < 3; i++) {
+            setTimeout(createFloatingChaos, i * 1000);
+        }
+        
+        // Welcome message with EXTREME energy
+        setTimeout(() => {
+            console.log("🔥 WELCOME TO MIKO'S EXTREME PHOTOGRAPHY PORTAL! 🔥");
+            triggerRandomChaos();
+        }, 2000);
     </script>
 </body>
 </html>
